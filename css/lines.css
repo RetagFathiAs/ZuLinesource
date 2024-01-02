@@ -16,7 +16,8 @@ html {
 }
 body {
     background-color: rgb(46, 110, 162);
-    font-style: italic;
+    font-family: 'Amiri', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 ul {
     list-style: none;
@@ -39,6 +40,8 @@ ul {
 }
 .main-heading {
     text-align: center;
+    font-family: 'Amiri', serif;
+font-family: 'Open Sans', sans-serif;
 }
 
 .main-heading h2{
@@ -70,7 +73,7 @@ ul {
     border-radius: 50%;
     border: 3px solid rgba(181, 130, 20, 0.847);
     bottom: -38px;
-    background-color: white;  
+    background-color: rgba(231, 225, 219, 0.87);  
 }
 
 .main-heading p {
@@ -315,11 +318,18 @@ header nav .form i{
     
   }
   .space{
-    margin-top: 150px;
+    padding: 100px;
+    background-color: rgba(224, 221, 217, 0);;
   }
   .yellogold{
     background-color: rgb(194, 182, 51);
   }
   .row .carousel {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.822);
+  }
+  .orlines{
+    background-color: rgba(179, 122, 15, 0.78);
+    text-align: center;
+    padding: 2px;
+    width: 70%;
   }
