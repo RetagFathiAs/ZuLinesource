@@ -17,7 +17,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
     
+    <style>
+        h1 {
+            font-family: 'Amiri', serif;
+        }
+      </style>
 </head>
 <body>
     <header>
@@ -68,14 +74,11 @@
         <div class="overlay">
           <div class="text">
                 <div class="contant">
-                    <h1>
-                        المجلس البلدي - زوارة
+                    <h1 id = "bigger" style="text-align: center;">
+                        بلدية زوارة الكبرى 
+                        <br>
+                        الموقع الرسمي للمجلس البلدي - زوارة
                     </h1>
-                    <p>
-                        <h2>  
-                            الموقع الرسمي لبلدية زوارة الكبرى.
-                        </h2>
-                    </p>
                 
                 </div>
             </div>
@@ -487,7 +490,17 @@
   <!-- Footer -->
 
 
-
+  <script>
+    var fontSize = 20;
+    var increaseFontSize = function(){
+        window.bigger.style.fontSize = fontSize + "px";
+        fontSize += 0.5;
+        if(fontSize > 70){
+            clearInterval(myInterval);
+        }
+    };
+    var myInterval = setInterval(increaseFontSize, 6);
+  </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
