@@ -122,7 +122,7 @@ header nav .toggle-menu{
     color:var(--m-color);
     font-size: 4px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 1200px){
     .toggle-menu {
         display: none;
     }
@@ -130,7 +130,7 @@ header nav .toggle-menu{
 header nav ul{
     display: flex;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 1200px) {
     header nav ul {
         display: none;
     }
@@ -204,10 +204,10 @@ header nav .form i{
 }
 .landing .text{
     position: absolute;
-    right: 0;
+    
     top: 50%; 
     transform: translateY(-50%);
-    width: 50%;
+    width: 100%;
     padding: 30px;
     background-color:rgba(245, 242, 240, 0.689);
     color: rgb(57, 74, 87);
@@ -224,7 +224,8 @@ header nav .form i{
     max-width: 500px;
   }
   .landing .text .content h2 {
-    font-size: 32px;
+    /*font-size: 32px;
+    */
     font-weight: normal;
     line-height: 1.5;
     margin-bottom: 20;
@@ -332,4 +333,17 @@ header nav .form i{
     text-align: center;
     padding: 2px;
     width: 70%;
+  }
+  .up {
+    position: fixed;
+    bottom: 10px;
+    right: -70px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 8px 5px rgba(229, 159, 18, 0.71);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .up.show {
+    right: 30px;
+    
   }
