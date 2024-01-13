@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width-device-width", initial-scaler="1" />
+    <meta name="viewport" content="width-device-width" , initial-scaler="1" />
     <title> supervisor's lines </title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -26,13 +26,14 @@
       </style>
 </head>
 <body>
+  
     <header>
         <div class="container">
             <a href="#" class="logo">
                 <img src="image/logo.png" alt="logo" />
             </a>
             <nav>
-                <i class="fas fa-bars toggle-menu"></i>
+                <i class="toggle-menu"><img id="slide" src="image/menu.png" alt="Slide" width=“300” height=“200” ></i>
                 <ul>
                     <li> <a href="#" class="Home">الصفحة الرئيسية</a></li>
                     <li> <a href="#members">حول المجلس</a></li>
@@ -489,6 +490,10 @@
   </footer>
   <!-- Footer -->
 
+  <span class="up"><img src="image/up-arrow.png"></span>
+  <script src="js/style.js"></script>
+    </body>
+
 
   <script>
     var fontSize = 20;
@@ -499,7 +504,7 @@
             clearInterval(myInterval);
         }
     };
-    var myInterval = setInterval(increaseFontSize, 6);
+    var myInterval = setInterval(increaseFontSize, 3);
   </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -508,5 +513,44 @@
         once: true,
       });
     </script>
-</body>
+    <!--menu-->
+    <script>
+    
+        var image1 = new Image();
+        image1.src = "image/menu.png";
+        var image2 = new Image();
+        image2.src = "image/menu (1).png";
+
+       
+        var images = [image1, image2];
+
+       
+        var currentImage = 0;
+
+      
+        function changeImage() {
+        
+          var img = document.getElementById("slide");
+         
+          img.src = images[currentImage].src;
+          
+          currentImage++;
+         
+          if (currentImage == images.length) {
+            currentImage = 0;
+          }
+        }
+
+        function hoverImage() {
+          var img = document.getElementById("slide");
+          img.src = images[1 - currentImage].src;
+        }
+
+        changeImage();
+
+        document.getElementById("slide").onmouseover = changeImage;
+        document.getElementById("slide").onmouseout = changeImage;
+
+    </script>
+
 </html>
