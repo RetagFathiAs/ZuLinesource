@@ -8,50 +8,88 @@
   <title> supervisor's lines </title>
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/lines.css" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
+  <link rel="stylesheet" href="css/sechead.css" />
+  <link rel="stylesheet" href="css/photoland.css" />
+
+  <style>
+      * {
+          font-family: 'Amiri', serif;
+      }
+    </style>
 </head>
 
 <body  style="background-color:  rgba(224, 221, 217, 0.666);">
-  <header style="background-color: white;">
-    <div class="container" >
-        <a href="#" class="logo" >
-            <img src="image/logo.png" alt="logo" />
-        </a>
-        <nav>
-            <i class="fas fa-bars toggle-menu"></i>
-            <ul>
-                <li> <a href="index.html" >الصفحة الرئيسية</a></li>
-                <li> <a href="index.html">حول المجلس</a></li>
-                <li> <a href="index.html">أهم الاخبار</a></li>
-                <li> <a href="#"class="Home">صور البلدية</a></li>
-                <li> <a href="#">تسجيل الدخول</a></li>
-            </ul>
-            <div class="form" >
-                <i><img src="image/search.png" height="40px"> </i>
-            </div>
-        </nav>
-    </div>
-</header>
-  
-  
-    <img src="image/phtoes/حول بلدية زوارة.jpg" class="img-fluid" width="100%" alt="...">
-    <div class="orlines" style="text-align: center;"></div>
-  <div class="space"  >
+  <sec-head>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="image/logo.png" height="55px" alt="logo" />
+      </a>
+      <nav>
+        <i class="toggle-menu"><img id="slide" src="image/menu.png" alt="Slide" width=“300” height=“200” ></i>
 
-  </div>
-  <div class="services"  >
+        <ul>
+          <li> <a href="index.html" style="font-size: 25px;" >الصفحة الرئيسية</a></li>
+          
+          <li> <a href="signin.html" style="font-size: 25px;">تسجيل الدخول</a></li>
+      </ul>
+      <div class="form" >
+          <i><a href="search.html"><img src="image/search.png" height="40px"></a> </i>
+      </div>
+        
+      </nav>
+    </div>
+  </sec-head>
+  
+  
+    
+
+    <div class="phlanding" >
+      
+        <div class="overlay">
+          <div class="text">
+                <div class="contant" >
+                    <h1 id="bigger" style="text-align: center;">
+                        حول بلدية زوارة
+                      <br>
+                    </h1>
+                    <ul >
+                    <h2>
+                      <li> <a href="#contact" style="color: white; font-size: 30px;     border: 3px solid rgba(249, 186, 50, 0.847);" button type="button" class="btn btn-outline-warning">
+                        تواصل معنا
+                      </a></li>
+                      <li> <a href="#photos" style="color: white; font-size: 30px;     border: 3px solid rgba(249, 186, 50, 0.847);" button type="button" class="btn btn-outline-warning">
+                        
+                        صور البلدية
+                      </a></li></button>
+                      <li> <a href="#location" style="color: white; font-size: 30px;     border: 3px solid rgba(249, 186, 50, 0.847);" button type="button" class="btn btn-outline-warning">
+                        موقع البلدية
+            
+                      </a></li>
+                      
+                      <li> <a href="#branch" style="color: white; font-size: 30px;     border: 3px solid rgba(249, 186, 50, 0.847);" button type="button" class="btn btn-outline-warning">
+                        فروع البلدية
+
+                      </a></li>
+                      </h2>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space" style="padding: 50px;"></div>
+  <div class="services" id="photos" >
   <div class="main-heading" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"  >
     <h2>
       صور البلدية
@@ -126,18 +164,24 @@
 <div class="orlines"></div>
 <div class="space" style="padding : 50px">
   </div>
-  <div class="container"  >
+  <div class="main-heading" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"  >
+    <h2>
+        موقع وفروع البلدية
+    </h2>
+
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="1700" data-aos-duration="1500" >
     <div class="row">
-      <div class="col-7">
+      <div class="col-7" id="location">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53581.43709260667!2d12.039576641107757!3d32.92883009136188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a961f3cd613c19%3A0x91852e54e28cdc3c!2sZuwara!5e0!3m2!1sen!2sly!4v1703876431672!5m2!1sen!2sly"
           width="600" height="450" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.822); border: 5px solid rgba(181, 130, 20, 0.587);" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="col-5">
-        <div class="list-group " style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.822);" >
+      <div class="col-5" style="padding-left: 70px;">
+        <div class="list-group" id="branch" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.822);" >
           <a data-toggle="collapse" href="#x"
-            class="list-group-item list-group-item-action  text-center" Style="background:rgba(213, 156, 34, 0.596); ">
+            class="list-group-item list-group-item-action  text-center" Style="background:rgba(231, 179, 66, 0.986); ">
             <h4> فروع البلدية
             </h4>
           </a>
@@ -154,13 +198,14 @@
     </div>
   </div>
 
-  <div class="space"  ></div>
+  <div class="space"></div>
 
-
+  
+  
 
 
   <!-- Footer -->
-  <footer class="text-center text-lg-start  text-muted" Style="background:rgba(181, 130, 20, 0.755);" >
+  <footer class="text-center text-lg-start  text-muted" Style="background:rgba(181, 130, 20, 0.755);" id="contact" >
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" Style="color:rgb(240, 255, 255)">
       <!-- Left -->
@@ -261,16 +306,31 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" Style="background:rgba(181, 130, 20, 0.758); color:azure">
+    <div class="text-center p-4" style="font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 170, 0), rgb(52, 142, 216));
+    ">
        Copyright:
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">retagfathi@gmail.com</a>
     </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <span class="up"><img src="image/up-arrow.png"></span>
+  <script src="js/style.js"></script>
 
-
-
+   <!--Main Title-->
+   <script>
+    var fontSize = 20;
+    var increaseFontSize = function(){
+        window.bigger.style.fontSize = fontSize + "px";
+        fontSize += 0.5;
+        if(fontSize > 70){
+            clearInterval(myInterval);
+        }
+    };
+    var myInterval = setInterval(increaseFontSize, 6);
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
